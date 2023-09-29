@@ -1,8 +1,7 @@
 FROM postgres:latest
 
 # update package
-RUN apt-get update && \
-    apt-get upgrade -y
+RUN apt-get update && apt-get upgrade -y
 
 # install common tools
 RUN apt-get install -y --no-install-recommends sudo git emacs less screen && \

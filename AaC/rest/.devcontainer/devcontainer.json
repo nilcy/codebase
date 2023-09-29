@@ -1,6 +1,8 @@
 // java
 {
-  "dockerComposeFile": ["../compose.yaml"],
+  "dockerComposeFile": [
+    "../compose.yaml"
+  ],
   "service": "app",
   "workspaceFolder": "/app",
   "features": {
@@ -10,6 +12,7 @@
       "installGradle": "true"
     }
   },
+  "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
   "customizations": {
     "vscode": {
       "extensions": [
