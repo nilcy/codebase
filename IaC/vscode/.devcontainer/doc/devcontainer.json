@@ -1,25 +1,17 @@
-// java
+// doc
 {
   "dockerComposeFile": [
     "../compose.yaml"
   ],
   "service": "app",
   "workspaceFolder": "/app",
-  "features": {
-    "ghcr.io/devcontainers/features/java:1": {
-      "version": "none",
-      "installMaven": "false",
-      "installGradle": "true"
-    }
-  },
   "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
   "customizations": {
     "vscode": {
       "extensions": [
         "esbenp.prettier-vscode",
         "shd101wyy.markdown-preview-enhanced",
-        "vscjava.vscode-java-pack",
-        "vmware.vscode-spring-boot"
+        "yzhang.markdown-all-in-one"
       ]
     }
   }

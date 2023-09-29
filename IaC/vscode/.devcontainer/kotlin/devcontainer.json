@@ -1,6 +1,8 @@
 // kotlin
 {
-  "dockerComposeFile": ["../compose.yaml"],
+  "dockerComposeFile": [
+    "../compose.yaml"
+  ],
   "service": "app",
   "workspaceFolder": "/app",
   "features": {
@@ -11,6 +13,7 @@
     },
     "ghcr.io/mikaello/devcontainer-features/kotlinc:1": {}
   },
+  "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
   "customizations": {
     "vscode": {
       "extensions": [

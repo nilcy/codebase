@@ -1,12 +1,18 @@
+// doc
 {
-  "dockerComposeFile": ["../compose.yaml", "compose.yaml"],
-  "service": "app",
-  "workspaceFolder": "/app",
-  "customizations": {
-      "vscode": {
-          "extensions": [
-              "shd101wyy.markdown-preview-enhanced"
-          ]
-      }
-  }
+    "dockerComposeFile": [
+        "../compose.yaml"
+    ],
+    "service": "app",
+    "workspaceFolder": "/app",
+    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "shd101wyy.markdown-preview-enhanced",
+                "yzhang.markdown-all-in-one"
+            ]
+        }
+    }
 }
