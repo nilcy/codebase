@@ -1,0 +1,12 @@
+{
+  "dockerComposeFile": ["../compose.yaml", "compose.yaml"],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "customizations": {
+      "vscode": {
+          "extensions": [
+              "shd101wyy.markdown-preview-enhanced"
+          ]
+      }
+  }
+}

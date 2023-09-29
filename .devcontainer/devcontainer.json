@@ -1,0 +1,18 @@
+//default
+{
+  "dockerComposeFile": [
+    "../compose.yaml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "shd101wyy.markdown-preview-enhanced",
+        "eamodio.gitlens"
+      ]
+    }
+  }
+}

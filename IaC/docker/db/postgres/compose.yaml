@@ -1,0 +1,11 @@
+services:
+  db:
+    build:
+      context: .
+    restart: always
+    network_mode: host
+    volumes:
+      - ./initdb.d:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: passw0rd

@@ -1,0 +1,16 @@
+//default
+{
+  "dockerComposeFile": [
+    "../compose.yaml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "shd101wyy.markdown-preview-enhanced"
+      ]
+    }
+  }
+}

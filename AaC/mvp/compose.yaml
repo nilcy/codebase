@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - JAVA_HOME=/usr/local/openjdk-17
+    tty: true
+    volumes:
+      - .:/app
+    working_dir: /app
+    network_mode: host
